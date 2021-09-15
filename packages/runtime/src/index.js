@@ -6,7 +6,7 @@ const {MDXProvider, mdx: createElement} = require('@mdx-js/react')
 const suffix = `return React.createElement(
   MDXProvider,
   {components},
-  React.createElement(MDXContent, props)
+  MDXContent(props)
 )`
 
 const runtime = ({
