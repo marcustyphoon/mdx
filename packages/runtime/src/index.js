@@ -6,7 +6,7 @@ import {MDXProvider, mdx as createElement} from '@mdx-js/react'
 const suffix = `return React.createElement(
   MDXProvider,
   {components},
-  React.createElement(MDXContent, props)
+  MDXContent(props)
 )`
 
 export default ({
